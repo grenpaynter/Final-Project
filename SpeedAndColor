@@ -61,15 +61,6 @@ var btn1 = new Button({
 
 
 
-var splash = function() {
-    fill(155, 200, 200);
-    rect(0, 0, 400, 400);
-    fill(0, 0, 0);
-    textSize(40);
-    text("Catching Balls", 75, 156);
-    btn1.draw();
-};
-
 var level2 = function() {
     background(85, 99, 150);
 };
@@ -168,9 +159,6 @@ mouseClicked = function () {
 };
 
 draw = function() {
-    if (currentScene === 0) {
-         splash();
-    }
     
     if( currentScene === 1){
       background(204, 247, 255);
